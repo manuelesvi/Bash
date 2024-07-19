@@ -1,6 +1,8 @@
 #!/bin/bash
-passwords=$(pwgen -yc 16 2)
+passwords=($(pwgen -yc 16 5))
 
-echo $passwords | sed 's/\ /\n/g'
-# read -a arrPasswords <<< "$source"
+for ((i=0; i < ${#passwords[@]}; i++))
+do
+    echo $((i+1)). ${passwords[i]}
+done
 
