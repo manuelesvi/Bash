@@ -29,6 +29,7 @@ for ((i=0; i < $length; i++ )); do
       (T | t) echo "tango";;
       (U | u) echo "uniform";;
       (V | v) echo "victor";;
+      (W | w) echo "whiskey";;
       (X | x) echo "x-ray";;
       (Y | y) echo "yankee";;
       (Z | z) echo "zulu";;
