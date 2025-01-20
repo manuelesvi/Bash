@@ -4,7 +4,6 @@
 # the letters of the Roman alphabet.
 
 length=${#1}
-letter=${1:0:1}
 for ((i=0; i < $length; i++ )); do
     letter=${1:i:1}
     case $letter in
