@@ -33,5 +33,6 @@ for ((i=0; i < $length; i++ )); do
       (X | x) echo "x-ray";;
       (Y | y) echo "yankee";;
       (Z | z) echo "zulu";;
+      *) echo $letter;;
     esac
 done
