@@ -1,8 +1,13 @@
 #!/bin/bash
-passwords=($(pwgen -yc 16 5))
+#passwords=($(pwgen -y 16 5))
+#for ((i=0; i < ${#passwords[@]}; i++))
 
-for ((i=0; i < ${#passwords[@]}; i++))
+passwords=$(pwgen -y 16 5)
+select pwd in $passwords
 do
-    echo $((i+1)). ${passwords[i]}
+    #echo $((i+1)). ${passwords[i]}
+    echo "You picked password #($REPLY):"
+    echo $pwd
+    break;
 done
 
