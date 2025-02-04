@@ -6,9 +6,8 @@ passwords=$(pwgen -y 16 5)
 select pwd in $passwords
 do
     #echo $((i+1)). ${passwords[i]}
-    echo "You picked password #($REPLY):"    
-    LAST_PWD=$pwd
-    echo "LAST_PWD = $LASTPWD"
+    echo "You picked password #$REPLY."
+    echo "Your password is: $pwd"
     break;
 done
 
