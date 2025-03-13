@@ -6,6 +6,9 @@
 length=${#1}
 for ((i=0; i < $length; i++ )); do
     letter=${1:i:1}
+    if [[ $letter =~ [A-Z] ]]; then
+      printf "upper "
+    fi
     case $letter in
       (A | a) echo "alpha";;
       (B | b) echo "bravo";;
