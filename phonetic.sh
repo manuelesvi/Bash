@@ -5,7 +5,7 @@
 
 length=${#1}
 for ((i=0; i < $length; i++ )); do
-    letter=${1:i:1}
+    letter=${1:i:1} # ${parameter:offset:length}
     # the string to the right of =~
     # is a POSIX extended regular expression
     if [[ $letter =~ [A-Z] ]]; then
