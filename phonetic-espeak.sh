@@ -45,5 +45,5 @@ for ((i=0; i < $length; i++ )); do
     spell+=$'\n'
 done
 echo "$spell" | \
-    espeak --punct="[]()\\^!\"#$%&/=?i.,+-_\{\}°|¬\`<>" \
+    espeak --punct="[]()\\^!\"#$%&/=?.:,;+-_\{\}°|¬\`<>~*" \
            -s 90 -g 35 -w phonetic.wav
