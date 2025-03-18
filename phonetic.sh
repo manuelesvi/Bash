@@ -9,7 +9,7 @@ for ((i=0; i < $length; i++ )); do
     # the string to the right of =~
     # is a POSIX extended regular expression
     if [[ $letter =~ [A-Z] ]]; then
-      printf "upper "
+      printf "capital "
     fi
     case $letter in
       (A | a) echo "alpha";;
